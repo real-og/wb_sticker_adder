@@ -8,3 +8,6 @@ nohup.out
 config.py
 test.jpg
 test2.jpg
+readme_private.txt
+sticker_errors.log
+handlers/sticker_errors.log
