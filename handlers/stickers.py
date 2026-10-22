@@ -165,10 +165,10 @@ def make_stickers(pdf_path, excel_path, output_path):
         for page, key in zip(pdf, found):
             article = mapping[key]
             unit_width = fitz.get_text_length(article, fontname='hebo', fontsize=1)
-            size = min(7.2, 34.0 / max(unit_width, 0.01))
+            size = min(7.8, 34.0 / max(unit_width, 0.01))
             if size < 2.7:
                 raise ValueError(f'Артикул {article!r} слишком длинный для свободной зоны стикера.')
-            page.insert_text((8.6, 59.5), article, fontname='hebo', fontsize=size,
+            page.insert_text((8.3, 59.5), article, fontname='hebo', fontsize=size,
                              rotate=90, color=(0, 0, 0), overlay=True)
         pdf.save(output_path, garbage=3, deflate=True)
         return len(found)
