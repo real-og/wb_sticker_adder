@@ -1,0 +1,10 @@
+Pipfile
+Pipfile.lock
+.env
+test.py
+__pycache__
+key.json
+nohup.out
+config.py
+test.jpg
+test2.jpg
